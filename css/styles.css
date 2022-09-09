@@ -858,6 +858,10 @@ address .contacts-link.rgba:focus {
    
 }
 
+.terms-checkbox:focus ~ .custom-checkbox {
+    fill: var(--accent-color);
+}
+
 .terms-checkbox {
      appearance: none;
     
