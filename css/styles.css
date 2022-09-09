@@ -841,6 +841,8 @@ address .contacts-link.rgba:focus {
     border-radius: 4px;
 
     transition: border var(--transition-dur-and-func);
+
+    resize: none;
 }
 
 .terms-wrapper {
