@@ -425,7 +425,7 @@
 
   <!--Футер-->
 
-  <footer>
+  <footer class="page-footer">
 
     <div class="container footer-flex">
 
@@ -490,6 +490,28 @@
 
     </div>
 
+    <!-- Форма отправки e-mail -->
+    <form class="subscribe-form">
+      
+      <p class="subscribe-title">Підпишіться на розсилку</p>
+
+      <label class="subscribe-label">
+        <input
+          type="mail"
+          class="subscribe-text-input"
+          name="subscribe_email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          placeholder="E-mail"
+          />
+      </label>
+
+      <button class="footer-submit-button" type="submit">Підписатися
+        <svg class="subscribe-svg" width="24px" height="24px">
+          <use class="subscribe-icon" href="./images/icons.svg#icon-send"></use>
+        </svg>
+      </button>
+    </form>
+
   </footer>
 
  
@@ -497,8 +519,8 @@
 
   <!-- Модальное окно -->
 
-  
-    <!-- НЕ ЗАБУДЬ ДОКИНУТЬ is-hidden!!!  -->
+  <!-- is-hidden -->
+    
     <div class="backdrop" data-modal>
       <div class="modal-window">
         <button class="modal-close-button" type="button" data-modal-close>
@@ -566,6 +588,8 @@
               placeholder="Введіть текст"></textarea>
           </label>
 
+
+          <div class="terms-wrapper">
           <label class="modal-checkbox">
             <input 
             class="terms-checkbox" 
@@ -573,9 +597,19 @@
             required
             name="user_terms"
             />
+
+            <svg class="custom-checkbox">
+              <use class="custom-checkbox-icon" href="./images/icons.svg#icon-checkbox"></use>
+            </svg>
+
+            <svg class="custom-checkbox-checked">
+              <use class="custom-checkbox-icon-checked" href="./images/icons.svg#icon-check"></use>
+            </svg>
+            
             <span class="terms-text">Погоджуюся з розсилкою та приймаю 
               <a class="terms-link" href="#">Умови договору</a></span>
           </label>
+          </div>
 
           <button class="submit-button" type="submit">Відправити</button>
         </form>

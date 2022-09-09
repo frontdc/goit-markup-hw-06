@@ -263,7 +263,7 @@
 
 <!--Футер-->
 
-<footer>
+<footer class="page-footer">
 
     <div class="container footer-flex">
 
@@ -327,6 +327,22 @@
         </div>
 
     </div>
+
+    <form class="subscribe-form">
+    
+        <p class="subscribe-title">Підпишіться на розсилку</p>
+    
+        <label class="subscribe-label">
+            <input type="mail" class="subscribe-text-input" name="subscribe_email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="E-mail" />
+        </label>
+    
+        <button class="footer-submit-button" type="submit">Підписатися
+            <svg class="subscribe-svg" width="24px" height="24px">
+                <use class="subscribe-icon" href="./images/icons.svg#icon-send"></use>
+            </svg>
+        </button>
+    </form>
 
 </footer>
 
