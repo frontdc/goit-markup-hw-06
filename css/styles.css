@@ -873,7 +873,7 @@ address .contacts-link.rgba:focus {
 
     margin-right: 8px;
 
-    
+    transition: fill var(--transition-dur-and-func);
 
     
 }
